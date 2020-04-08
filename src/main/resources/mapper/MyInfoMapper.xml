@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.icss.boot2.dao.MyInfoMapper">
+
+    <select id="getAllInfo" resultType="com.icss.boot2.domain.MyInfo">
+            select * from tb_myinfo
+    </select>
+    <insert id="insertInfo" parameterType="com.icss.boot2.domain.MyInfo">
+         INSERT INTO tb_myinfo(mname,mphone,mimg) VALUES(#{mname},#{mphone},#{mimg})
+    </insert>
+</mapper>

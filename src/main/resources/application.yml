@@ -1,0 +1,18 @@
+#服务器配置
+server:
+  port: 8080
+  servlet:
+    context-path: /boot2
+
+#数据库连接池配置
+jdbc:
+  driver: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql:///db_library?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+  username: root
+  password: root
+
+#mybatis相关配置:
+mybatis:
+  mybatis_config_path: mybatis-config.xml
+  mapper_path: /mapper/**.xml
+  domain_package: com.icss.boot2.domain
